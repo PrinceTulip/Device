@@ -1,0 +1,14 @@
+@import "blocks/fonts";
+@import "blocks/basic";
+@import "blocks/normalize";
+@import "blocks/modal";
+@import "blocks/variables";
+@import "blocks/mixin";
+
+@import "blocks/header";
+
+$hz:#ccc;
+
+h2 {
+  color:$hz;
+}
