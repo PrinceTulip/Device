@@ -71,19 +71,22 @@
   }
 }
 
-.search__input:focus > .search__button {
+.search__input:focus ~ .search__button {
   display: inline-block;
+
 }
 
 .search__button {
   display: none;
   position: absolute;
-  top: 0;
+  top: -9px;
   left: 358px;
   color: #000;
   text-decoration: none;
-  padding: 7.5px 18.5px;
   border: 2px solid #000;
+  background-color: transparent;
+  padding: 14px 19px;
+  cursor: pointer;
 
   &:hover {
     background: #000;
