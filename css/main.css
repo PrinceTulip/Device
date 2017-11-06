@@ -497,7 +497,8 @@ template {
   padding: 15px 30px;
   padding-top: 0;
   border: none;
-  border-bottom: 2px solid transparent; }
+  border-bottom: 2px solid transparent;
+  transition: all linear 0.1s; }
   .search__input:focus {
     border-bottom: 2px solid #000; }
   .search__input:focus {
@@ -518,13 +519,14 @@ template {
   display: none;
   position: absolute;
   top: -9px;
-  left: 358px;
+  right: 80px;
   color: #000;
   text-decoration: none;
   border: 2px solid #000;
   background-color: transparent;
   padding: 14px 19px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all linear 0.3s; }
   .search__button:hover {
     background: #000;
     color: #ffffff; }

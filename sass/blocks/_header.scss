@@ -57,6 +57,7 @@
   padding-top: 0;
   border: none;
   border-bottom: 2px solid transparent;
+  transition: all linear 0.1s;
 
   &:focus {
     border-bottom: 2px solid #000;
@@ -73,20 +74,20 @@
 
 .search__input:focus ~ .search__button {
   display: inline-block;
-
 }
 
 .search__button {
   display: none;
   position: absolute;
   top: -9px;
-  left: 358px;
+  right: 80px;
   color: #000;
   text-decoration: none;
   border: 2px solid #000;
   background-color: transparent;
   padding: 14px 19px;
   cursor: pointer;
+  transition: all linear 0.3s;
 
   &:hover {
     background: #000;
