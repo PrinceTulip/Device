@@ -2,6 +2,7 @@
 *,*::after {
   box-sizing: inherit;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -12,20 +13,26 @@ body {
   background-color: #ffffff;
   box-sizing: border-box;
 }
+
 .container {
-  width: 1180px;
+  max-width: 1180px;
+  width: 100%;
   padding: 0 10px;
   margin: 0 auto;
 }
+
 .header-page__wrapper {
-  width: 1160px;
+  max-width: 1160px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 60px;
   background-color: #f7e296;
 }
+
 .row {
   display: flex;
 }
+
 .bx-viewport {
   overflow: auto;
   height: 100%;
