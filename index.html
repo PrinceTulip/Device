@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Device</title>
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -59,8 +61,95 @@
               </div>
           </div>
         </div>
+        <div class="header__bottom">
+          <nav class="navigation">
+            <div class="row navigation-row">
+              <div class="navigation__catalog">
+                <a class="navigation__link navigation__link--padding_right" href="#">
+                  <span class="navigation__icon navigation__icon--plus">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <use xlink:href="#plus"/>
+                    </svg>
+                  </span>
+                  Каталог товаров
+                  <ul class="navigation-menu__drop-list">
+                    <li class="navigation-menu__drop-item">
+                      <a class="navigation-menu__drop-link" href="#">Виртуальная реальность</a>
+                      <a class="navigation-menu__drop-link" href="#">Моноподы для селфи</a>
+                      <a class="navigation-menu__drop-link" href="#">Экш-камеры</a>
+                    </li>
+                    <li class="navigation-menu__drop-item">
+                      <a class="navigation-menu__drop-link" href="#">Фитнес-браслеты</a>
+                      <a class="navigation-menu__drop-link" href="#">Умные часы</a>
+                    </li>
+                    <li class="navigation-menu__drop-item">
+                      <a class="navigation-menu__drop-link" href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </a>
+              </div>
+              <div class="navigation-menu">
+                <ul class="navigation-menu__list">
+                  <li class="navigation-menu__item navigation-menu__item--pr">
+                    <a class="navigation-menu__link navigation__link" href="#">Доставка</a>
+                  </li>
+                  <li class="navigation-menu__item">
+                    <a class="navigation-menu__link navigation__link" href="#">Гарантия</a>
+                  </li>
+                  <li class="navigation-menu__item">
+                    <a class="navigation-menu__link navigation__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
    </header>
+    <div class="main-content">
+      <div class="container">
+        <div class="slider">
+            <div class="slide">
+              <div class="row slide-row">
+                <div class="slide__left">
+                  <div class="slide__image">
+                    <img class="slide-img" src="img/slide-img.png" alt="slide-img">
+                  </div>
+                </div>
+                <div class="slider__right">
+                  <div class="slide__title">
+                    Делай селфи,
+                    как Бен Стиллер!
+                  </div>
+                  <div class="slide__desc">
+                    Самая длинная палка для селфи доступна в нашем магазине.
+                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                  </div>
+                  <a class="button slide-link" href="#">Подробнее</a>
+                  <table class="slider-table">
+                    <tr>
+                      <td>8,5 м</td>
+                      <td>Длина палки</td>
+                    </tr>
+                    <tr>
+                      <td>5 кг</td>
+                      <td>Вес палки</td>
+                    </tr>
+                    <tr>
+                      <td>Карбон</td>
+                      <td>Материал</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              </div>
+
+
+            <div class="slide">your content</div>
+            <div class="slide">your content</div>
+        </div>
+      </div>
+    </div>
   </div>
 <div hidden>
   <svg>
@@ -76,7 +165,21 @@
     <g id="basket">
       <path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/>
     </g>
+    <g id="plus">
+      <path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/>
+    </g>
   </svg>
 </div>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script>
+      $(document).ready(function(){
+          $('.slider').slick({
+              dots:true
+      });
+      });
+
+  </script>
 </body>
 </html>

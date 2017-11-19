@@ -1,0 +1,50 @@
+.slider {
+  z-index: 100;
+}
+
+.slide__image {
+  position: relative;
+  top: -50px;
+  z-index: 100;
+}
+
+.slide__title {
+  font-size: 47px;
+  font-weight: 800;
+  letter-spacing: 0.17px;
+  font-family: $Gilroy;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.slide__desc {
+  font-size: 15px;
+  font-family: $OpenSans;
+  font-weight: 300;
+  letter-spacing: 0.15px;
+  color: #464646;
+  margin-bottom: 60px;
+}
+
+.button {
+  position: relative;
+  font-family: $Gilroy;
+  color: #000;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 2.15px;
+  text-decoration: none;
+  outline: none;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background: #f0c52e;
+    top: 8px;
+    left: 0;
+    width: 220px;
+    height: 8px;
+  }
+
+}

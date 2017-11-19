@@ -1,0 +1,173 @@
+.header {
+  margin-top: 40px;
+  padding-top: 40px;
+  background-color: $orange;
+  padding-bottom: 140px;
+}
+
+.header__top {
+  position: relative;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.header-top__logo {
+  position: absolute;
+  top: -56px;
+  left: -16px;
+}
+
+.header-top__logo span {
+  text-decoration: none;
+  font-size: 48px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.header__top-row {
+  justify-content: space-between;
+}
+
+.header-user {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.header-top__search {
+  position: relative;
+  width: 50%;
+}
+
+.search__icon {
+  position: absolute;
+  content: '';
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.search__input {
+  position: relative;
+  width: 358px;
+  background-color: transparent;
+  font-size: 15px;
+  color: rgba(#000, 0.3);
+  padding: 15px 30px;
+  padding-top: 0;
+  border: none;
+  border-bottom: 2px solid transparent;
+  transition: all linear 0.1s;
+
+  &:focus {
+    border-bottom: 2px solid #000;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @include placeholder {
+    color: rgba(#000, 0.3);
+  }
+}
+
+.search__input:focus ~ .search__button {
+  display: inline-block;
+}
+
+.search__button {
+  display: none;
+  position: absolute;
+  top: -9px;
+  right: 80px;
+  color: #000;
+  text-decoration: none;
+  border: 2px solid #000;
+  background-color: transparent;
+  padding: 14px 19px;
+  cursor: pointer;
+  transition: all linear 0.3s;
+
+  &:hover {
+    background: #000;
+    color: #ffffff;
+  }
+
+  &:active {
+    background: #000;
+    color: #68686d;
+  }
+}
+
+.search__input:hover::-webkit-input-placeholder {
+  color: rgba(#000, 0.5);
+}
+
+.search__input:hover:-moz-placeholder {
+  color: rgba(#000, 0.5);
+}
+
+.search__input:hover::-moz-placeholder {
+  color: rgba(#000, 0.5);
+}
+
+.search__input:hover:-ms-input-placeholder {
+  color: rgba(#000, 0.5);
+}
+
+.search__input:focus::-webkit-input-placeholder {
+  color: #000;
+}
+
+.search__input:focus:-moz-placeholder {
+  color: #000;
+}
+
+.search__input:focus::-moz-placeholder {
+  color: #000;
+}
+
+.search__input:focus:-ms-input-placeholder {
+  color: #000;
+}
+
+.header-user__link {
+  position: relative;
+  text-decoration: none;
+  font-weight: normal;
+  color: #000;
+  font-family: $OpenSans;
+  padding-left: 20px;
+
+  &:hover {
+    color: rgba(#000, 0.5);
+  }
+
+  &:hover .header-user__icon {
+    opacity: 0.5;
+  }
+
+  &:active .header-user__icon {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: rgba(#000, 0.3);
+  }
+}
+
+.header-user__icon {
+  position: absolute;
+  content: '';
+  top: -4px;
+  left: 0;
+  width: 13px;
+  height: 12px;
+}
+
+.header-actions__compare {
+  margin-right: 40px;
+}
