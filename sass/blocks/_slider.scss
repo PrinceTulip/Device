@@ -30,7 +30,12 @@
   margin-bottom: 60px;
 }
 
+.slide-link {
+  margin-bottom: 30px;
+}
+
 .button {
+  display: inline-block;
   position: relative;
   font-family: $Gilroy;
   color: #000;
@@ -43,11 +48,12 @@
   z-index: 1;
   padding: 10px 30px;
 
+
   &::before {
     position: absolute;
     content: '';
     background: #f0c52e;
-    top: 17px;
+    top: 21px;
     left: 0px;
     width: 100%;
     height: 8px;
@@ -70,25 +76,27 @@
 }
 
 .slider-table {
-  padding: 0;
+  display: flex;
+
 }
 
 .slider-table__title {
   font-size: 36px;
   font-weight: 300;
   font-family: $Gilroy;
-  padding: 0;
 }
 
 .slider-table__desc {
   font-size: 13px;
   font-family: $OpenSans;
-  line-height: 20;
   font-weight: 300;
   color: #464646;
   letter-spacing: 0.13px;
-  padding: 0;
 }
+
+
+
+
 
 
 
