@@ -673,6 +673,7 @@ template {
 .slide__image {
   position: relative;
   top: -50px;
+  left: 78px;
   z-index: 10; }
 
 .slide__title {
@@ -681,7 +682,8 @@ template {
   letter-spacing: 0.17px;
   font-family: "Gilroy", Arial san-serif;
   color: #000;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  line-height: 55px; }
 
 .slide__desc {
   font-size: 15px;
@@ -718,6 +720,32 @@ template {
   .button:active {
     color: rgba(0, 0, 0, 0.3); }
 
+.slider__right {
+  margin-left: 195px;
+  margin-top: 19px; }
+
+.slider-table {
+  padding: 0; }
+
+.slider-table__title {
+  font-size: 36px;
+  font-weight: 300;
+  font-family: "Gilroy", Arial san-serif;
+  padding: 0; }
+
+.slider-table__desc {
+  font-size: 13px;
+  font-family: "Open Sans", Arial san-serif;
+  line-height: 20;
+  font-weight: 300;
+  color: #464646;
+  letter-spacing: 0.13px;
+  padding: 0; }
+
+.slider {
+  outline: none;
+  overflow: hidden; }
+
 .slick-dots {
   background: #ffffff;
   outline: none; }
@@ -740,6 +768,12 @@ template {
   border-radius: 50%;
   border: 1px solid #000;
   font-size: 0; }
+
+.slick-list {
+  overflow: visible; }
+
+.slick-slide {
+  outline: none; }
 
 .header {
   margin-top: 40px;
