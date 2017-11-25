@@ -1,17 +1,9 @@
 .slider {
-  z-index: 100;
   position: relative;
   top: -50px;
 }
 
-.slide__image {
-  position: relative;
-  top: -50px;
-  left: 78px;
-  z-index: 10;
-}
-
-.slide__title {
+.slider__title {
   font-size: 47px;
   font-weight: 800;
   letter-spacing: 0.17px;
@@ -21,7 +13,7 @@
   line-height: 55px;
 }
 
-.slide__desc {
+.slider__desc {
   font-size: 15px;
   font-family: $OpenSans;
   font-weight: 300;
@@ -30,8 +22,8 @@
   margin-bottom: 60px;
 }
 
-.slide-link {
-  margin-bottom: 30px;
+.slider__btn {
+  margin-bottom: 70px;
 }
 
 .button {
@@ -70,20 +62,8 @@
   }
 }
 
-.slider__right {
-  margin-left: 195px;
-  margin-top: 19px;
-}
-
-.slider-table {
-  display: flex;
-
-}
-
-.slider-table__title {
-  font-size: 36px;
-  font-weight: 300;
-  font-family: $Gilroy;
+.slide__right {
+  margin-top: -8px;
 }
 
 .slider-table__desc {
@@ -93,6 +73,94 @@
   color: #464646;
   letter-spacing: 0.13px;
 }
+
+.slider > input[type="radio"] {
+  position: absolute;
+  display: none;
+}
+
+.slide {
+  min-height: 485px;
+  display: none;
+}
+
+#btn-1:checked ~ .slider__controls label[for="btn-1"]::before,
+#btn-2:checked ~ .slider__controls label[for="btn-2"]::before,
+#btn-3:checked ~ .slider__controls label[for="btn-3"]::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 6px;
+  height: 6px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+#btn-1:checked ~ #slide-1 {
+  display: block;
+}
+#btn-2:checked ~ #slide-2 {
+  display: block;
+}
+#btn-3:checked ~ #slide-3 {
+  display: block;
+}
+
+.slider__controls {
+  position: absolute;
+  bottom: 114px;
+  right: 13px;
+  height: 100px;
+  width: 140px;
+}
+
+.slider__controls label {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 12px;
+  height: 12px;
+  margin-right: 18px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+th {
+  font-size: 36px;
+  font-weight: 300;
+  font-family: $Gilroy;
+  color: #000;
+  padding-right: 80px;
+}
+
+td {
+  font-size: 13px;
+  font-weight: 300;
+  font-family: $OpenSans;
+  color: #464646;
+  padding-right: 80px;
+}
+
+.slide__left {
+  position: relative;
+  width: 50%;
+}
+
+.slider__img {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
